@@ -110,3 +110,58 @@ module "sandbox4" {
   account_customizations_name = "sandbox"
 }
 
+module "networking" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+networking@humn.ai"
+    AccountName               = "networking"
+    ManagedOrganizationalUnit = "management"
+    SSOUserEmail              = "awstest@humn.ai"
+    SSOUserFirstName          = "Sandbox"
+    SSOUserLastName           = "AFT"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = ""
+}
+
+module "production" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+production@humn.ai"
+    AccountName               = "production"
+    ManagedOrganizationalUnit = "production"
+    SSOUserEmail              = "awstest@humn.ai"
+    SSOUserFirstName          = "Sandbox"
+    SSOUserLastName           = "AFT"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = ""
+}
