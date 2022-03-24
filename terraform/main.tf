@@ -84,11 +84,11 @@ module "shared" {
 
 
 
-module "networking" {
+module "networking123" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+networkingservices@humn.ai"
+    AccountEmail              = "awstest+networkingservices123@humn.ai"
     AccountName               = "Networking Services"
     ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "awstest@humn.ai"
