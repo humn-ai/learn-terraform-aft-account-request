@@ -26,11 +26,11 @@ module "production" {
   account_customizations_name = "production"
 }
 
-module "non-production" {
+module "nonprod" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+nonprod@humn.ai"
+    AccountEmail              = "awstest+nonprod123@humn.ai"
     AccountName               = "Nonprod"
     ManagedOrganizationalUnit = "Non-production"
     SSOUserEmail              = "awstest@humn.ai"
