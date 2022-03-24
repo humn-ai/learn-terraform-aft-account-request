@@ -116,7 +116,7 @@ module "security" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+security@humn.ai"
+    AccountEmail              = "awstest+securityservices@humn.ai"
     AccountName               = "Security Services"
     ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "awstest@humn.ai"
@@ -130,7 +130,7 @@ module "security" {
 
   change_management_parameters = {
     change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_reason       = "Change Email"
   }
 
   custom_fields = {
