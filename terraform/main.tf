@@ -112,6 +112,38 @@ module "networking123" {
   account_customizations_name = "shared-services"
 }
 
+module "networking1231111" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+networkingservices1231111@humn.ai"
+    AccountName               = "Networking Services111"
+    ManagedOrganizationalUnit = "Shared Services"
+    SSOUserEmail              = "awstest@humn.ai"
+    SSOUserFirstName          = "Sandbox"
+    SSOUserLastName           = "AFT"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Update emails"
+  }
+
+  custom_fields = {
+    group = "shared-services"
+  }
+
+  account_customizations_name = "shared-services"
+}
+
+
+
+
+
 module "security" {
   source = "./modules/aft-account-request"
 
