@@ -2,8 +2,8 @@ module "production" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+prodx@humn.ai"
-    AccountName               = "Production"
+    AccountEmail              = "awstest+prod123@humn.ai"
+    AccountName               = "Prod"
     ManagedOrganizationalUnit = "Production"
     SSOUserEmail              = "awstest@humn.ai"
     SSOUserFirstName          = "Sandbox"
@@ -31,7 +31,7 @@ module "non-production" {
 
   control_tower_parameters = {
     AccountEmail              = "awstest+nonprod@humn.ai"
-    AccountName               = "Non production"
+    AccountName               = "Nonprod"
     ManagedOrganizationalUnit = "Non-production"
     SSOUserEmail              = "awstest@humn.ai"
     SSOUserFirstName          = "Sandbox"
