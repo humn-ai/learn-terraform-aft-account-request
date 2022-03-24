@@ -31,7 +31,7 @@ module "non-production" {
 
   control_tower_parameters = {
     AccountEmail              = "awstest+nonprod@humn.ai"
-    AccountName               = "Non-production"
+    AccountName               = "Non production"
     ManagedOrganizationalUnit = "Non-production"
     SSOUserEmail              = "awstest@humn.ai"
     SSOUserFirstName          = "Sandbox"
@@ -44,7 +44,7 @@ module "non-production" {
 
   change_management_parameters = {
     change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_reason       = "retry account creation"
   }
 
   custom_fields = {
