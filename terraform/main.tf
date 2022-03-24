@@ -88,7 +88,7 @@ module "networking" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+networking@humn.ai"
+    AccountEmail              = "awstest+networkingservices@humn.ai"
     AccountName               = "Networking Services"
     ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "awstest@humn.ai"
@@ -102,7 +102,7 @@ module "networking" {
 
   change_management_parameters = {
     change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_reason       = "Update emails"
   }
 
   custom_fields = {
