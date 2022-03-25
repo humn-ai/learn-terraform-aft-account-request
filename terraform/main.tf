@@ -171,3 +171,32 @@ module "security" {
 
   account_customizations_name = "security-services"
 }
+
+
+module "security2" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+securityservices2@humn.ai"
+    AccountName               = "Security Services2"
+    ManagedOrganizationalUnit = "Shared Services"
+    SSOUserEmail              = "awstest@humn.ai"
+    SSOUserFirstName          = "Sandbox"
+    SSOUserLastName           = "AFT"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Change Email"
+  }
+
+  custom_fields = {
+    group = "security-services"
+  }
+
+  account_customizations_name = "security-services"
+}
