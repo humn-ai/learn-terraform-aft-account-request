@@ -200,3 +200,31 @@ module "security2" {
 
   account_customizations_name = "security-services"
 }
+
+module "migrated_prod" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+proddummy@rideshur.com"
+    AccountName               = "humn-prod-dummy"
+    ManagedOrganizationalUnit = "Production"
+    SSOUserEmail              = "awstest+proddummy@rideshur.com"
+    SSOUserFirstName          = "Migrated"
+    SSOUserLastName           = "Account"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Change Email"
+  }
+
+  custom_fields = {
+    group = "security-services"
+  }
+
+  account_customizations_name = "security-services"
+}
