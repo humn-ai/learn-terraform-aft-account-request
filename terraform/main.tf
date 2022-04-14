@@ -248,7 +248,36 @@ module "audit_ct_orginal" {
 
   change_management_parameters = {
     change_requested_by = "Albertas"
-    change_reason       = "Test enroll under AFT"
+    change_reason       = "Test enroll under AFT v2"
+  }
+
+  custom_fields = {
+    group = "security-services"
+  }
+
+  account_customizations_name = "security-services"
+}
+
+
+module "log_ct_orginal" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+logarchive@humn.ai"
+    AccountName               = "Log Archive"
+    ManagedOrganizationalUnit = "Security"
+    SSOUserEmail              = "awstest+logarchive@humn.ai"
+    SSOUserFirstName          = "Audit"
+    SSOUserLastName           = "Account"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "Albertas"
+    change_reason       = "Test enroll under AFT v2"
   }
 
   custom_fields = {
