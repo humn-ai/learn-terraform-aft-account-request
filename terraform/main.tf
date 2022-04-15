@@ -320,7 +320,7 @@ module "test_newacc" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+newacc11111e@humn.ai"
+    AccountEmail              = "awstest+newacc1e@humn.ai"
     AccountName               = "Triage02"
     ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "awstest+newacc12345e@humn.ai"
