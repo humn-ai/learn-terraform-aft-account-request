@@ -352,7 +352,7 @@ module "test_newacc" {
   control_tower_parameters = {
     AccountEmail              = "awstest+newacc12345e@humn.ai"
     AccountName               = "Triage01"
-    ManagedOrganizationalUnit = "Security"
+    ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "awstest+newacc12345e@humn.ai"
     SSOUserFirstName          = "Audit"
     SSOUserLastName           = "Account"
@@ -363,13 +363,13 @@ module "test_newacc" {
   }
 
   change_management_parameters = {
-    change_requested_by = "Albertas"
-    change_reason       = "Test enroll under AFT v2"
+    change_requested_by = "Albertas111"
+    change_reason       = "Test enroll under AFT v211"
   }
 
   custom_fields = {
-    group = "security-services"
+    group = "shared-services"
   }
 
-  account_customizations_name = "security-services"
+  account_customizations_name = "shared-services"
 }
