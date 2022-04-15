@@ -229,7 +229,7 @@ module "migrated_prod" {
   account_customizations_name = "security-services"
 }
 
-
+/*
 module "audit_ct_orginal" {
   source = "./modules/aft-account-request"
 
@@ -257,8 +257,9 @@ module "audit_ct_orginal" {
 
   account_customizations_name = "security-services"
 }
+*/
 
-
+/*
 module "log_ct_orginal" {
   source = "./modules/aft-account-request"
 
@@ -343,3 +344,4 @@ module "test_newacc" {
 
   account_customizations_name = "security-services"
 }
+*/
