@@ -237,7 +237,7 @@ module "audit_ct_orginal" {
     AccountEmail              = "awstest+audit@humn.ai"
     AccountName               = "Audit"
     ManagedOrganizationalUnit = "Security"
-    SSOUserEmail              = "aw stest+audit@humn.ai"
+    SSOUserEmail              = "awstest+audit@humn.ai"
     SSOUserFirstName          = "Audit"
     SSOUserLastName           = "Account"
   }
