@@ -269,7 +269,7 @@ module "log_ct_orginal" {
     ManagedOrganizationalUnit = "Security"
     SSOUserEmail              = "awstest+logarchive@humn.ai"
     SSOUserFirstName          = "Log"
-    SSOUserLastName           = "Security"
+    SSOUserLastName           = "Account"
   }
 
   account_tags = {
@@ -278,7 +278,7 @@ module "log_ct_orginal" {
 
   change_management_parameters = {
     change_requested_by = "Albertas"
-    change_reason       = "Test enroll under AFT v2"
+    change_reason       = "RETRY ENROLLMENT"
   }
 
   custom_fields = {
