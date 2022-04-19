@@ -288,66 +288,6 @@ module "log_ct_orginal" {
   account_customizations_name = "security-services"
 }
 
-/*
-module "test_newacc" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "awstest+newacc12345e@humn.ai"
-    AccountName               = "Triage01"
-    ManagedOrganizationalUnit = "Security"
-    SSOUserEmail              = "awstest+newacc12345e@humn.ai"
-    SSOUserFirstName          = "Audit"
-    SSOUserLastName           = "Account"
-  }
-
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "Albertas"
-    change_reason       = "Test enroll under AFT v2"
-  }
-
-  custom_fields = {
-    group = "security-services"
-  }
-
-  account_customizations_name = "security-services"
-}
-
-module "test_newacc" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "awstest+newacc1e@humn.ai"
-    AccountName               = "Triage02"
-    ManagedOrganizationalUnit = "Shared Services"
-    SSOUserEmail              = "awstest+newacc12345e@humn.ai"
-    SSOUserFirstName          = "Audit"
-    SSOUserLastName           = "Account"
-  }
-
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "Albertas"
-    change_reason       = "Test enroll under AFT v2"
-  }
-
-  custom_fields = {
-    group = "security-services"
-  }
-
-  account_customizations_name = "security-services"
-}
-
-
-
-*/
 module "test_newacc1111" {
   source = "./modules/aft-account-request"
 
@@ -403,3 +343,57 @@ module "test_newacc2222" {
 
   account_customizations_name = "shared-services"
 }
+
+module "test_newacc1111" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest+newacc01@humn.ai"
+    AccountName               = "NewAcc01"
+    ManagedOrganizationalUnit = "Shared Services"
+    SSOUserEmail              = "awstest+newacc01@humn.ai"
+    SSOUserFirstName          = "New"
+    SSOUserLastName           = "Account"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "Albertas111"
+    change_reason       = "Test enroll under AFT v211"
+  }
+
+  custom_fields = {
+    group = "shared-services"
+  }
+
+  account_customizations_name = "shared-services"
+}
+
+module "ct_management" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "awstest@humn.ai"
+    AccountName               = "test-humn.ai"
+    ManagedOrganizationalUnit = "Root"
+    SSOUserEmail              = "awstest@humn.ai"
+    SSOUserFirstName          = "Management"
+    SSOUserLastName           = "Account"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "Albertas111"
+    change_reason       = "Enroll CT acc"
+  }
+
+
+  account_customizations_name = "shared-services"
+}
+
