@@ -259,7 +259,7 @@ module "audit_ct_orginal" {
 }
 
 
-/*
+
 module "log_ct_orginal" {
   source = "./modules/aft-account-request"
 
@@ -288,7 +288,7 @@ module "log_ct_orginal" {
   account_customizations_name = "security-services"
 }
 
-
+/*
 module "test_newacc" {
   source = "./modules/aft-account-request"
 
@@ -344,7 +344,7 @@ module "test_newacc" {
 
   account_customizations_name = "security-services"
 }
-*/
+
 
 module "test_newacc" {
   source = "./modules/aft-account-request"
@@ -401,3 +401,4 @@ module "test_newacc" {
 
   account_customizations_name = "shared-services"
 }
+*/
