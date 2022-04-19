@@ -353,7 +353,7 @@ module "test_newacc1111" {
 
   control_tower_parameters = {
     AccountEmail              = "awstest+newacc01@humn.ai"
-    AccountName               = "NewAcc"
+    AccountName               = "NewAcc01"
     ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "awstest+newacc01@humn.ai"
     SSOUserFirstName          = "New"
