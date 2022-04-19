@@ -346,15 +346,17 @@ module "test_newacc" {
 }
 
 
-module "test_newacc" {
+
+*/
+module "test_newacc1111" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+newacc12345e@humn.ai"
-    AccountName               = "Triage01"
+    AccountEmail              = "awstest+newacc01@humn.ai"
+    AccountName               = "NewAcc"
     ManagedOrganizationalUnit = "Shared Services"
-    SSOUserEmail              = "awstest+newacc12345e@humn.ai"
-    SSOUserFirstName          = "Audit"
+    SSOUserEmail              = "awstest+newacc01@humn.ai"
+    SSOUserFirstName          = "New"
     SSOUserLastName           = "Account"
   }
 
@@ -374,15 +376,15 @@ module "test_newacc" {
   account_customizations_name = "shared-services"
 }
 
-module "test_newacc" {
+module "test_newacc2222" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awstest+newacc12345e111@humn.ai"
-    AccountName               = "Triage01111"
+    AccountEmail              = "awstest+newacc02@humn.ai"
+    AccountName               = "NewAcc"
     ManagedOrganizationalUnit = "Shared Services"
-    SSOUserEmail              = "awstest+newacc123411115e@humn.ai"
-    SSOUserFirstName          = "Audit"
+    SSOUserEmail              = "awstest+newacc02@humn.ai"
+    SSOUserFirstName          = "New"
     SSOUserLastName           = "Account"
   }
 
@@ -391,8 +393,8 @@ module "test_newacc" {
   }
 
   change_management_parameters = {
-    change_requested_by = "Albertas111111"
-    change_reason       = "Test enroll under AFT v2111111"
+    change_requested_by = "Albertas111"
+    change_reason       = "Test enroll under AFT v211"
   }
 
   custom_fields = {
@@ -401,4 +403,3 @@ module "test_newacc" {
 
   account_customizations_name = "shared-services"
 }
-*/
