@@ -239,7 +239,7 @@ module "audit_ct_orginal" {
     ManagedOrganizationalUnit = "Security"
     SSOUserEmail              = "awstest+audit@humn.ai"
     SSOUserFirstName          = "Audit"
-    SSOUserLastName           = "Account"
+    SSOUserLastName           = "Security"
   }
 
   account_tags = {
@@ -268,8 +268,8 @@ module "log_ct_orginal" {
     AccountName               = "Log Archive"
     ManagedOrganizationalUnit = "Security"
     SSOUserEmail              = "awstest+logarchive@humn.ai"
-    SSOUserFirstName          = "Audit"
-    SSOUserLastName           = "Account"
+    SSOUserFirstName          = "Log"
+    SSOUserLastName           = "Security"
   }
 
   account_tags = {
