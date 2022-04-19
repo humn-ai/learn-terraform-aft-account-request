@@ -344,33 +344,7 @@ module "test_newacc2222" {
   account_customizations_name = "shared-services"
 }
 
-module "test_newacc1111" {
-  source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "awstest+newacc01@humn.ai"
-    AccountName               = "NewAcc01"
-    ManagedOrganizationalUnit = "Shared Services"
-    SSOUserEmail              = "awstest+newacc01@humn.ai"
-    SSOUserFirstName          = "New"
-    SSOUserLastName           = "Account"
-  }
-
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "Albertas111"
-    change_reason       = "Test enroll under AFT v211"
-  }
-
-  custom_fields = {
-    group = "shared-services"
-  }
-
-  account_customizations_name = "shared-services"
-}
 
 module "ct_management" {
   source = "./modules/aft-account-request"
