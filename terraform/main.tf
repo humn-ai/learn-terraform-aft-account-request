@@ -404,7 +404,7 @@ module "test-upgrade-162" {
 
   control_tower_parameters = {
     AccountEmail              = "awstest+upgrade162@humn.ai"
-    AccountName               = "Upgrade162"
+    AccountName               = "Upgrade162-renamed"
     ManagedOrganizationalUnit = "Non-production"
     SSOUserEmail              = "awstest+upgrade162@humn.ai"
     SSOUserFirstName          = "Sandbox"
